@@ -1,0 +1,44 @@
+sudo bin/start-hbase.sh
+sudo bin/stop-hbase.sh
+
+location 
+hdfs dfs -ls /user/kalpesh/tmp/hbase
+
+start-hbase.sh
+jps
+hbase shell
+create 'emp', 'personal data', 'professional data'
+create 'emp', 'personal data', 'professional data'
+put 'emp','1','personal data:location','ayodhya'
+
+
+
+HBase Shell
+HBase contains a shell using which you can communicate with HBase. HBase uses the Hadoop File System to store its data. It will have a master server and region servers. The data storage will be in the form of regions (tables). These regions will be split up and stored in region servers.
+The master server manages these region servers and all these tasks take place on HDFS. Given below are some of the commands supported by HBase Shell.
+
+General Commands
+status - Provides the status of HBase, for example, the number of servers.
+version - Provides the version of HBase being used.
+table_help - Provides help for table-reference commands.
+whoami - Provides information about the user.
+
+Data Definition Language
+These are the commands that operate on the tables in HBase.
+
+create - Creates a table.
+list - Lists all the tables in HBase.
+disable - Disables a table.
+is_disabled - Verifies whether a table is disabled.
+enable - Enables a table.
+is_enabled - Verifies whether a table is enabled.
+describe - Provides the description of a table.
+alter - Alters a table.
+exists - Verifies whether a table exists.
+drop - Drops a table from HBase.
+drop_all - Drops the tables matching the ‘regex’ given in the command.
+Java Admin API - Prior to all the above commands, Java provides an Admin API to achieve DDL functionalities through programming. Underorg.apache.hadoop.hbase.client package, HBaseAdmin and HTableDescriptor are the two important classes in this package that provide DDL functionalities.
+
+
+
+start-hbase.sh

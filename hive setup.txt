@@ -1,0 +1,21 @@
+ chmod 644 hive-2.3.8.tgz
+ 
+tar xvzf hive-2.3.8.tgz 
+
+cd hive-2.3.8/   
+
+cd apache-hive-2.3.8-bin/  
+
+ pwd (copy the output)
+
+ vi ~/.bashrc   
+
+source ~/.bashrc
+
+#add this to the bashrc file
+export HIVE_HOME=/home/techsherry/hive-2.3.8/apache-hive-2.3.8-bin  
+
+ ./bin/schematool -initSchema -dbType derby   
+
+./bin/hive 
+
