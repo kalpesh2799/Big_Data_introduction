@@ -1,0 +1,31 @@
+Introduction to Big Data
+
+What is big data??
+
+  The 5 Vs 
+  1. Volume - How big is my data
+  2. Velocity - How fast is my data
+  3. Variety - Is there a lot of variety
+  4. Veracity - How accurate is my data
+  5. Value - How valuable is my data
+  
+  
+The three pillars of Big Data
+  1. Data Science
+  2. Hadoop
+  3. Cloud
+
+
+Hadoop Architecture (Map Reduce Job Execution)
+1. Client
+2. Job
+3. Master - Slave
+4. HDFS - Shared File System
+5. ResourceManager (YARN)
+6. NodeManager
+7. AppMaster
+8. Container ( a.k.a Executor / a.k.a YarnChild / a.k.a blah blah blah )
+9. Map Task
+10. Reduce Task
+
+
